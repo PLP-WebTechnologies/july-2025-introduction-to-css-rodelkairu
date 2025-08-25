@@ -1,118 +1,70 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Fruit Theme • Box Model Demo</title>
-    <!-- Link to external stylesheet -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header container">
-      <h1>Fruit Box Model Playground</h1>
-      <nav class="site-nav" aria-label="Primary">
-        <ul>
-          <li><a href="#intro">Intro</a></li>
-          <li><a href="#cards">Fruit Cards</a></li>
-          <li><a href="#box-model">Box Model</a></li>
-          <li><a href="#cta">Make a Fruit Salad</a></li>
-        </ul>
-      </nav>
-    </header>
+<article class="card card-mango">
+<h3>Mango</h3>
+<p>
+Juicy and aromatic. Loaded with vitamins A and E. Background color helps
+you visualize the element’s <strong>box</strong>.
+</p>
+<a class="btn" href="#cta">Slice & Enjoy</a>
+</article>
+<article class="card card-kiwi">
+<h3>Kiwi</h3>
+<p>
+Tangy and bright. Vitamin C powerhouse. Rounded corners emphasize the
+card container and its layout role.
+</p>
+<a class="btn btn-ghost" href="#cta">Tiny but Mighty</a>
+</article>
+</div>
+</section>
 
-    <main>
-      <section id="intro" class="container section">
-        <h2>Welcome to the Orchard</h2>
-        <p>
-          This page uses a <em>fruit theme</em> to demonstrate basic selectors, text styling,
-          and the <strong>CSS Box Model</strong>: content, padding, border, and margin.
-        </p>
-        <p>
-          All styles live in the external <code>styles.css</code> file linked above — view
-          source and tweak values to see how spacing affects the layout.
-        </p>
-      </section>
 
-      <section id="cards" class="container section">
-        <h2>Fruit Cards</h2>
-        <p class="muted">Each card shows spacing, borders, and alignment — with fruity flair.</p>
-        <div class="card-grid">
-          <article class="card card-apple">
-            <h3>Apple</h3>
-            <p>
-              Crisp and balanced. Rich in fiber and vitamin C. Notice the inner
-              <strong>padding</strong> and the subtle <strong>border</strong>.
-            </p>
-            <a class="btn" href="#cta">Add to Salad</a>
-          </article>
-          <article class="card card-banana">
-            <h3>Banana</h3>
-            <p>
-              Sweet and creamy. A great source of potassium. Check the outer
-              <strong>margin</strong> that separates this card from its neighbors.
-            </p>
-            <a class="btn btn-outline" href="#cta">Peel Details</a>
-          </article>
-          <article class="card card-mango">
-            <h3>Mango</h3>
-            <p>
-              Juicy and aromatic. Loaded with vitamins A and E. Background color helps
-              you visualize the element’s <strong>box</strong>.
-            </p>
-            <a class="btn" href="#cta">Slice & Enjoy</a>
-          </article>
-          <article class="card card-kiwi">
-            <h3>Kiwi</h3>
-            <p>
-              Tangy and bright. Vitamin C powerhouse. Rounded corners emphasize the
-              card container and its layout role.
-            </p>
-            <a class="btn btn-ghost" href="#cta">Tiny but Mighty</a>
-          </article>
-        </div>
-      </section>
+<section id="box-model" class="container section">
+<h2>Box Model Examples</h2>
+<p>
+The fruit crates below vary <strong>padding</strong>, <strong>border</strong>, and
+<strong>margin</strong>. Inspect them to see how each piece influences layout.
+</p>
 
-      <section id="box-model" class="container section">
-        <h2>Box Model Examples</h2>
-        <p>
-          The fruit crates below vary <strong>padding</strong>, <strong>border</strong>, and
-          <strong>margin</strong>. Inspect them to see how each piece influences layout.
-        </p>
 
-        <div class="box-row">
-          <div class="box demo-1">
-            <h4>Apple Crate (.demo-1)</h4>
-            <p>Compact padding, thin border, small margin.</p>
-          </div>
+<div class="box-row">
+<div class="box demo-1">
+<h4>Apple Crate (.demo-1)</h4>
+<p>Compact padding, thin border, small margin.</p>
+</div>
 
-          <div class="box demo-2">
-            <h4>Banana Crate (.demo-2)</h4>
-            <p>Roomy padding, medium border, medium margin.</p>
-          </div>
 
-          <div class="box demo-3">
-            <h4>Mango Crate (.demo-3)</h4>
-            <p>Asymmetric padding & margins to show layout shifts.</p>
-          </div>
-        </div>
-      </section>
+<div class="box demo-2">
+<h4>Banana Crate (.demo-2)</h4>
+<p>Roomy padding, medium border, medium margin.</p>
+</div>
 
-      <section id="cta" class="container section cta">
-        <h2>Make a Fruit Salad</h2>
-        <p>
-          Try changing the <code>padding</code>, <code>border</code>, and <code>margin</code>
-          of the cards and crates in <code>styles.css</code>. See how your salad (layout)
-          looks with tighter or looser spacing.
-        </p>
-        <div class="cta-actions">
-          <a class="btn" href="#intro">Back to Top</a>
-          <button class="btn btn-ghost" type="button">I'm Feeling Zesty</button>
-        </div>
-      </section>
-    </main>
 
-    <footer class="site-footer container">
-      <p>&copy; <span id="year">2025</span> Fruit Box Model Demo. No frameworks, just HTML + CSS.</p>
-    </footer>
-  </body>
+<div class="box demo-3">
+<h4>Mango Crate (.demo-3)</h4>
+<p>Asymmetric padding & margins to show layout shifts.</p>
+</div>
+</div>
+</section>
+
+
+<section id="cta" class="container section cta">
+<h2>Make a Fruit Salad</h2>
+<p>
+Try changing the <code>padding</code>, <code>border</code>, and <code>margin</code>
+of the cards and crates in <code>styles.css</code>. See how your salad (layout)
+looks with tighter or looser spacing.
+</p>
+<div class="cta-actions">
+<a class="btn" href="#intro">Back to Top</a>
+<button class="btn btn-ghost" type="button">I'm Feeling Zesty</button>
+</div>
+</section>
+</main>
+
+
+<footer class="site-footer container">
+<p>&copy; <span id="year">2025</span> Fruit Box Model Demo. No frameworks, just HTML + CSS.</p>
+</footer>
+</body>
 </html>
